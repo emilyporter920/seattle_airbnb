@@ -52,4 +52,4 @@
 
 ## Dashboard
 * Access our dashboard here (ADD LINK)
-* Access our live dashboard demo here (ADD LINK)
+* Access our live dashboard demo here (ADD LINK).
