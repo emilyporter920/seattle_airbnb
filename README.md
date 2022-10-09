@@ -42,10 +42,10 @@
     * Visual Studio Code
 
 ## Machine Learning Model
-* __
-* __
-* __
-* __
+* Sequential model
+* ReLU activation function 
+* 3 hidden layers, 500 epochs
+* 
 
 ## Presentation
 * Access our presentation slides here (ADD LINK)
