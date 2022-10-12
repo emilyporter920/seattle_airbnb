@@ -10,7 +10,7 @@
 * AirBNBs in Seattle
 
 ## Source Data
-* Access our source data here (ADD LINK)
+* Access our source data here: https://www.kaggle.com/datasets/airbnb/seattle
 
 ## Questions We Hope To Answer
 * When is the most affordable time to go to Seattle?
