@@ -44,7 +44,7 @@
 * 3 hidden layers, 500 epochs 
 
 ## Presentation
-* Access our presentation slides here (ADD LINK)
+* Access our presentation slides here: https://docs.google.com/presentation/d/1icmLt7eO1Spff29124g_vV3Oj6s1S81FOCbXvFXCNaw/edit?usp=sharing
 
 ## Dashboard
 * Access our dashboard here (ADD LINK)
