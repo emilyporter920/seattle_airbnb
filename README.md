@@ -7,15 +7,14 @@
 * Graham Burch
 
 ## Selected Topic
-* ___
+* AirBNBs in Seattle
 
 ## Source Data
-* Access our source data here (ADD LINK)
+* Access our source data here: https://www.kaggle.com/datasets/airbnb/seattle
 
 ## Questions We Hope To Answer
-* __
-* __
-* __
+* When is the most affordable time to go to Seattle?
+* How much is your favorite Airbnb at a specific time of year?
 
 ## Communication
 * In order to keep teammates updated - google hangouts, slack, and regular zoom meetings were utilized.
@@ -25,30 +24,27 @@
     * PostgreSQL
     * Amazon Web Services (AWS)
 * Connecting to Database
-    * Psycopg2
+    * SQLAlchemy
 * Analyzing & Cleaning Data
     * Pandas
-* Machine Learning
-    * __
-    * __ 
-    * __
+* Supervised Machine Learning
+    * Keras/Tensorflow
 * Dashboard
     * HTML
     * CSS
     * Javascript
-    * __
+    * Tableau
 * Other Tools
     * Jupyter Notebook
     * Visual Studio Code
 
 ## Machine Learning Model
-* __
-* __
-* __
-* __
+* Sequential model
+* ReLU activation function 
+* 3 hidden layers, 500 epochs 
 
 ## Presentation
-* Access our presentation slides here (ADD LINK)
+* Access our presentation slides here: https://docs.google.com/presentation/d/1icmLt7eO1Spff29124g_vV3Oj6s1S81FOCbXvFXCNaw/edit?usp=sharing
 
 ## Dashboard
 * Access our dashboard here (ADD LINK)
