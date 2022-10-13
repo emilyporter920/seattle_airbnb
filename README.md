@@ -51,8 +51,6 @@
 
 <p align="center">
   <img 
-    width="100%"
-    height="75"
     src=Resources/images/ERD_2_clean.png
   >
 </p>
