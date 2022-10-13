@@ -18,6 +18,7 @@
 
 ## Communication
 * In order to keep teammates updated - google hangouts, slack, and regular zoom meetings were utilized.
+* Our tracker list created using google sheets can be accessed <a href="https://docs.google.com/spreadsheets/d/1tLIKKyJ99hu_YNYIIDx7AmVLVdwfLJwwXPZTy9znj38/edit?usp=sharing" target="_blank">here</a>.
 
 ## Tools Used
 * Creating Database
@@ -39,10 +40,31 @@
     * Jupyter Notebook
     * Visual Studio Code
 
+## Data Cleaning
+* The two CSV files were loaded into Jupyter Notebooks for data preparation and cleaning. All NA values were dropped in both CSV files using **.dropna()** and necessary columns were extracted from the original dataframe using **.copy()**. Since machine learning models require integers the use of Pandas allowed the use of .str.replace to remove the dollar signs from the prices and **.astype()** was used to convert the object data type into an int32. The dates were also assessed and were converted to only include the month of the entry. This was performed using **.to_datetime()**, **dt.to_period()**, and **dt.month**. The outliers included in the data were kept for further data analysis because it did not appear to be entry error.
+
+<p align="center">
+  <img 
+    src=Resources/images/data_cleaning_1.png
+  >
+</p>
+
+<p align="center">
+  <img 
+    src=Resources/images/data_cleaning_2.png
+  >
+</p>
+
+## Exploratory Data
+* .
+
 ## Machine Learning Model
 * Sequential model
 * ReLU activation function 
 * 3 hidden layers, 500 epochs 
+
+### Reason for Choosing Machine Learning Model
+* .
 
 ## Database
 
@@ -54,6 +76,11 @@
     src=Resources/images/ERD_2_clean.png
   >
 </p>
+
+## Project Website Creation
+* This was created using HTML, CSS, and Javascript. Data stored in the CSV was converted to JSON and stored in data.js. A filter was created for user input which includes the listing ID and the month.
+
+* Based on the user input a popup containing information on how many bedrooms, bathrooms, and an estimated price range for the Airbnb listing will appear on the interactive map integrated into the website. 
 
 ## Presentation
 * Access our presentation slides <a href="https://docs.google.com/presentation/d/1icmLt7eO1Spff29124g_vV3Oj6s1S81FOCbXvFXCNaw/edit?usp=sharing" target="_blank">here</a>.
