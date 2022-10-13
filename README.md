@@ -7,10 +7,10 @@
 * Graham Burch
 
 ## Selected Topic
-* AirBNBs in Seattle
+* Airbnbs in Seattle
 
 ## Source Data
-* Access our source data here: https://www.kaggle.com/datasets/airbnb/seattle
+* Access our source data <a href="https://www.kaggle.com/datasets/airbnb/seattle" target="_blank">here</a>.
 
 ## Questions We Hope To Answer
 * When is the most affordable time to go to Seattle?
@@ -33,6 +33,7 @@
     * HTML
     * CSS
     * Javascript
+    * Git Hub Pages
     * Tableau
 * Other Tools
     * Jupyter Notebook
@@ -43,9 +44,22 @@
 * ReLU activation function 
 * 3 hidden layers, 500 epochs 
 
+## Database
+
+### ERD Diagram
+* This diagram was created to help visualize the connections between the different csv files that were utilized.
+
+<p align="center">
+  <img 
+    width="100%"
+    height="75"
+    src=Resources/images/ERD_2_clean.png
+  >
+</p>
+
 ## Presentation
-* Access our presentation slides here: https://docs.google.com/presentation/d/1icmLt7eO1Spff29124g_vV3Oj6s1S81FOCbXvFXCNaw/edit?usp=sharing
+* Access our presentation slides <a href="https://docs.google.com/presentation/d/1icmLt7eO1Spff29124g_vV3Oj6s1S81FOCbXvFXCNaw/edit?usp=sharing" target="_blank">here</a>.
 
 ## Dashboard
-* Access our dashboard here (ADD LINK)
+* Access our dashboard <a href="https://emilyporter920.github.io/final_project/" target="_blank">here</a>.
 * Access our live dashboard demo here (ADD LINK).
