@@ -41,12 +41,12 @@
                 <p>Filter Search</p>
                 <ul class="list-group bg-dark">
                     <li class="list-group-item bg-dark">
-                        <label for="date">Enter Listing ID</label>
-                        <input type="text" placeholder="1/10/2010" id="datetime" />
+                        <label for="listing_id">Enter Listing ID</label>
+                        <input type="number" placeholder="000000" id="listing_id" />
                     </li>
                     <li class="list-group-item bg-dark">
-                        <label for="date">Enter Month</label>
-                        <input type="text" placeholder="roswell" id="city" />
+                        <label for="price">Enter Price</label>
+                        <input type="number" placeholder="" id="price" />
                     </li>
                 </ul>
             </form>
@@ -55,7 +55,28 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d204910.42530385818!2d-122.35105165373827!3d47.561573506275536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1665593948805!5m2!1sen!2sus" width="100%" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-      </div>    
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Listing Id</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip Code</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Accommodates</th>
+            <th>Bathrooms</th>
+            <th>Bedrooms</th>
+            <th>Beds</th>
+            <th>Price</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      
       <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
       <script src="static/js/data.js"></script>
       <script src="static/js/app.js"></script>
