@@ -101,5 +101,7 @@
   >
 </p>
 
+* Access the Tableau dashboard <a href="https://public.tableau.com/app/profile/emily.porter7135/viz/Dashboard_16656930095490/AirbnbPriceTrends?publish=yes" target="_blank">here</a>.
+
 ## R Integration
 * 
