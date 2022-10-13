@@ -66,6 +66,9 @@
 ### Reason for Choosing Machine Learning Model
 * .
 
+### Processing Description
+* ADD THINGS FROM RUBRIC TO THIS SECTION
+
 ## Database
 
 ### ERD Diagram
@@ -88,3 +91,15 @@
 ## Dashboard
 * Access our dashboard <a href="https://emilyporter920.github.io/final_project/" target="_blank">here</a>.
 * Access our live dashboard demo here (ADD LINK).
+
+## Tableau Integration
+* Below is a tableau dashboard that shows the prices based on latitude and longitude using both a scatter plot and a map with a filter based on the price per night. There is also a scatter plot showing a steady increase in price based on the number of bedrooms for each listing with a filter based on the price per night. The website application is embedded into the dashboard.
+
+<p align="center">
+  <img 
+    src=Resources/images/tableau_dashboard.png
+  >
+</p>
+
+## R Integration
+* 
