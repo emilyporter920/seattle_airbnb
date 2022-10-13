@@ -1,4 +1,4 @@
-[
+const data = [
     {
       "listing_id": 241032,
       "city": "Seattle",
