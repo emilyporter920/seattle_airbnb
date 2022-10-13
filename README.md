@@ -47,7 +47,7 @@
 ## Database
 
 ### ERD Diagram
-* This diagram was created to help visualize the connections between the different csv files that were utilized.
+* This diagram was created to help visualize the connections between the different CSV files that were utilized.
 
 <p align="center">
   <img 
