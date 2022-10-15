@@ -1,24 +1,24 @@
-runtime: python27
+runtime: python38
 api_version: 1
 threadsafe: true
 
-# handlers:
-# - url: /
-#   script: home.app
+handlers:
+- url: /
+  script: app.py
 
-# - url: /index\.html
-#   script: home.app
+- url: /index\.html
+  script: home.app
 
-# - url: /stylesheets
-#   static_dir: stylesheets
+- url: /stylesheets
+  static_dir: stylesheets
 
-# - url: /(.*\.(gif|png|jpg))$
-#   static_files: static/\1
-#   upload: static/.*\.(gif|png|jpg)$
+- url: /(.*\.(gif|png|jpg))$
+  static_files: static/\1
+  upload: static/.*\.(gif|png|jpg)$
 
-# - url: /admin/.*
-#   script: admin.app
-#   login: admin
+- url: /admin/.*
+  script: admin.app
+  login: admin
 
-# - url: /.*
-#   script: not_found.app
+- url: /.*
+  script: not_found.app
