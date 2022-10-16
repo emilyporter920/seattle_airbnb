@@ -1,6 +1,6 @@
 # Comment
 aiohttp
-anaconda-navigator
+# anaconda-navigator
 anaconda-project
 astropy
 autopep8
