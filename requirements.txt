@@ -1,6 +1,6 @@
 aiohttp
 # anaconda-navigator
-anaconda-project
+# anaconda-project
 astropy
 autopep8
 bitarray
