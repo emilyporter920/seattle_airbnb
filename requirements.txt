@@ -1,11 +1,11 @@
 ##aiohttp
 # anaconda-navigator
 # anaconda-project
-astropy
-autopep8
-bitarray
-bkcharts
-boto3
+##astropy
+##autopep8
+##bitarray
+##bkcharts
+##boto3
 bottleneck
 brotlipy
 bs4
@@ -14,34 +14,35 @@ conda-build
 # conda-repo-cli
 # conda-token
 # conda-verify
-cython
-cytoolz
+##cython
+##cytoolz
 datashader
-distributed
+##distributed
 flake8
 flask-pymongo
-gensim
+##gensim
 google-cloud-storage
 gunicorn
 html5lib
 hvplot
-imagecodecs
-intake
-jdcal
+##imagecodecs
+##intake
+##jdcal
 jupyter
 jupyterlab
-lz4
+##lz4
 # mkl-fft
 # mkl-random
 # mkl-service
 mock
-mongo
+##mongo
 munkres
 # navigator-updater
 nltk
-nose
-olefile
+##nose
+##olefile
 openpyxl
+pandas
 pep8
 pip-chill
 plotly
@@ -55,15 +56,15 @@ pyreadline
 pysocks
 pytest
 python-snappy
-rope
+##rope
 scikit-image
 scikit-learn-intelex
 scrapy
 seaborn
-sip
-sortedcollections
+##sip
+##sortedcollections
 splinter
-spyder
+##spyder
 sqlalchemy
 statsmodels
 sympy
@@ -73,7 +74,7 @@ tbb
 tensorflow
 typed-ast
 unidecode
-webdriver-manager
+##webdriver-manager
 win-inet-pton
 win-unicode-console
 wincertstore
