@@ -34,7 +34,7 @@ jupyter
 jupyterlab
 # mkl-fft
 # mkl-random
-mkl-service
+# mkl-service
 mock
 mongo
 munkres
