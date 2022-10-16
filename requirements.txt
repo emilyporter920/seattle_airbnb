@@ -12,8 +12,8 @@ bs4
 comtypes
 conda-build
 # conda-repo-cli
-conda-token
-conda-verify
+# conda-token
+# conda-verify
 cython
 cytoolz
 datashader
@@ -31,13 +31,13 @@ jdcal
 jupyter
 jupyterlab
 lz4
-mkl-fft
-mkl-random
-mkl-service
+# mkl-fft
+# mkl-random
+# mkl-service
 mock
 mongo
 munkres
-navigator-updater
+# navigator-updater
 nltk
 nose
 olefile
