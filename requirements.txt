@@ -10,7 +10,7 @@
 ##brotlipy
 ##bs4
 ##comtypes
-conda-build
+##conda-build
 # conda-repo-cli
 # conda-token
 # conda-verify
@@ -19,11 +19,11 @@ conda-build
 ##datashader
 ##distributed
 ##flake8
-flask-pymongo
+##flask-pymongo
 ##gensim
 ##google-cloud-storage
 gunicorn
-html5lib
+##html5lib
 ##hvplot
 ##imagecodecs
 ##intake
