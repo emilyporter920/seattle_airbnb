@@ -28,8 +28,8 @@ gunicorn
 ##imagecodecs
 ##intake
 ##jdcal
-jupyter
-jupyterlab
+##jupyter
+##jupyterlab
 ##lz4
 # mkl-fft
 # mkl-random
@@ -65,13 +65,13 @@ pandas
 ##sortedcollections
 ##splinter
 ##spyder
-sqlalchemy
+##sqlalchemy
 ##statsmodels
 ##sympy
 ##tables
 ##tabulate
 ##tbb
-tensorflow
+##tensorflow
 ##typed-ast
 ##unidecode
 ##webdriver-manager
