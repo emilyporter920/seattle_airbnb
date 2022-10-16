@@ -1,6 +1,6 @@
 # Comment 
 absl-py==1.2.0
-anaconda-navigator
+# anaconda-navigator
 appdirs==1.4.4
 astunparse==1.6.3
 atomicwrites==1.4.0
