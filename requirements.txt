@@ -19,6 +19,7 @@
 ##datashader
 ##distributed
 ##flake8
+flask
 ##flask-pymongo
 ##gensim
 ##google-cloud-storage
