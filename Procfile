@@ -1,1 +1,1 @@
-web: gunicorn herokutestertosee:app
+web: gunicorn app:app
