@@ -62,6 +62,7 @@ pandas
 ##scikit-learn-intelex
 ##scrapy
 ##seaborn
+sklearn
 ##sip
 ##sortedcollections
 ##splinter
