@@ -33,7 +33,7 @@ jdcal
 jupyter
 jupyterlab
 # mkl-fft
-mkl-random
+# mkl-random
 mkl-service
 mock
 mongo
