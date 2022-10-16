@@ -1,1 +1,1 @@
-web: gunicorn herokutestertosee.wsgi
+web: gunicorn herokutestertosee:app
