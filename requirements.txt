@@ -13,7 +13,7 @@ bs4
 comtypes
 conda-build
 # conda-package-handling
-conda-repo-cli
+# conda-repo-cli
 conda-token
 conda-verify
 cython
