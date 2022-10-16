@@ -39,7 +39,7 @@ mock
 mongo
 munkres
 mypy-extensions
-navigator-updater
+# navigator-updater
 nltk
 nose
 olefile
