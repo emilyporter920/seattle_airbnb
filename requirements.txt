@@ -1,5 +1,6 @@
 # # Comments
 gunicorn==20.1.0
+numpy==1.21.5
 # aiohttp
 # # anaconda-navigator
 # # anaconda-project
