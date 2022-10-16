@@ -1,4 +1,5 @@
 # # Comment
+gunicorn==19.0.0
 # aiohttp
 # # anaconda-navigator
 # # anaconda-project
