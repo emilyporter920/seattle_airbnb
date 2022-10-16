@@ -6,25 +6,25 @@
 ##bitarray
 ##bkcharts
 ##boto3
-bottleneck
-brotlipy
-bs4
-comtypes
+##bottleneck
+##brotlipy
+##bs4
+##comtypes
 conda-build
 # conda-repo-cli
 # conda-token
 # conda-verify
 ##cython
 ##cytoolz
-datashader
+##datashader
 ##distributed
-flake8
+##flake8
 flask-pymongo
 ##gensim
-google-cloud-storage
+##google-cloud-storage
 gunicorn
 html5lib
-hvplot
+##hvplot
 ##imagecodecs
 ##intake
 ##jdcal
@@ -34,51 +34,51 @@ jupyterlab
 # mkl-fft
 # mkl-random
 # mkl-service
-mock
+## mock
 ##mongo
-munkres
+## munkres
 # navigator-updater
-nltk
+##nltk
 ##nose
 ##olefile
-openpyxl
+##openpyxl
 pandas
-pep8
-pip-chill
-plotly
-psycopg2-binary
-pycurl
-pydocstyle
-pyhamcrest
-pyjwt
-pyodbc
-pyreadline
-pysocks
-pytest
-python-snappy
+##pep8
+## pip-chill
+##plotly
+##psycopg2-binary
+##pycurl
+##pydocstyle
+##pyhamcrest
+##pyjwt
+##pyodbc
+##pyreadline
+##pysocks
+##pytest
+##python-snappy
 ##rope
-scikit-image
-scikit-learn-intelex
-scrapy
-seaborn
+##scikit-image
+##scikit-learn-intelex
+##scrapy
+##seaborn
 ##sip
 ##sortedcollections
-splinter
+##splinter
 ##spyder
 sqlalchemy
-statsmodels
-sympy
-tables
-tabulate
-tbb
+##statsmodels
+##sympy
+##tables
+##tabulate
+##tbb
 tensorflow
-typed-ast
-unidecode
+##typed-ast
+##unidecode
 ##webdriver-manager
-win-inet-pton
-win-unicode-console
-wincertstore
-xlrd
-xlsxwriter
-xlwings
-yapf
+##win-inet-pton
+##win-unicode-console
+##wincertstore
+##xlrd
+##xlsxwriter
+##xlwings
+##yapf
