@@ -32,6 +32,7 @@ gunicorn
 ##jupyter
 ##jupyterlab
 ##lz4
+matplotlib
 # mkl-fft
 # mkl-random
 # mkl-service
