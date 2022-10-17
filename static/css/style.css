@@ -3,7 +3,7 @@ body {
     color: #f7f7f7;
   }
   .jumbotron {
-    background-image: url("../../Resources/images/spaceneedle.jpg");
+    background-image: url("/static/images/spaceneedle.jpg");
     background-size: cover;
     background-position: 0% 15%;
     height: 350px;
@@ -34,7 +34,7 @@ h2 {
 }
   
 p {
-  font-size: 500px;
+  font-size: 16px;
 }
   #map {
     height: 800px;
