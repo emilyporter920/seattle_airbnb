@@ -1,0 +1,87 @@
+##aiohttp
+# anaconda-navigator
+# anaconda-project
+##astropy
+##autopep8
+##bitarray
+##bkcharts
+##boto3
+##bottleneck
+##brotlipy
+##bs4
+##comtypes
+##conda-build
+# conda-repo-cli
+# conda-token
+# conda-verify
+##cython
+##cytoolz
+##datashader
+##distributed
+##flake8
+flask
+##flask-pymongo
+##gensim
+##google-cloud-storage
+gunicorn
+##html5lib
+##hvplot
+##imagecodecs
+##intake
+##jdcal
+##jupyter
+##jupyterlab
+##lz4
+matplotlib
+# mkl-fft
+# mkl-random
+# mkl-service
+## mock
+##mongo
+## munkres
+# navigator-updater
+##nltk
+##nose
+##olefile
+##openpyxl
+pandas
+##pep8
+## pip-chill
+##plotly
+##psycopg2-binary
+##pycurl
+##pydocstyle
+##pyhamcrest
+##pyjwt
+##pyodbc
+##pyreadline
+##pysocks
+##pytest
+##python-snappy
+##rope
+##scikit-image
+##scikit-learn-intelex
+##scrapy
+##seaborn
+sklearn
+##sip
+##sortedcollections
+##splinter
+##spyder
+##sqlalchemy
+##statsmodels
+##sympy
+##tables
+##tabulate
+##tbb
+##tensorflow
+##typed-ast
+##unidecode
+##webdriver-manager
+##win-inet-pton
+##win-unicode-console
+##wincertstore
+##xlrd
+##xlsxwriter
+##xlwings
+##yapf
