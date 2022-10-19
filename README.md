@@ -71,12 +71,11 @@
 * Other benefits: very accurate, many aspects of the model are changeable, easy to save model
 
 ### Processing Description
-* ADD THINGS FROM RUBRIC TO THIS SECTION
 * Certain variables, such as bed rooms, were transformed, e.g. square root on each data point
 * Applied one-hot encoding on each categorical feature, e.g. zipcode
 * Normalized data such that each feature had mean of 0 and standard deviation of 1
 
-### feature selection
+### Feature Selection
 * Features were chosen based on their relevance to price
 * For example, an airbnb with a large number of bedrooms would likely cost more
 * Data was split randomly between training and testing groups, with 25% of data as testing
