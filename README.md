@@ -64,10 +64,22 @@
 * 3 hidden layers, 500 epochs 
 
 ### Reason for Choosing Machine Learning Model
-* .
+* our data had several features
+* none of the models we had learned in this course could perform regression except for neural networks
+* tensorflow is easy to use 
+* limitations: requires a lot of data to train, data takes 5 minutes
+* other benefits: very accurate, many aspects of the model are changeable, easy to save model
 
 ### Processing Description
 * ADD THINGS FROM RUBRIC TO THIS SECTION
+* certain variables, such as bed rooms, were transformed, e.g. square root on each data point
+* applied one-hot encoding on each categorical feature, e.g. zipcode
+* normalized data such that each feature had mean of 0 and standard deviation of 1
+
+### feature selection
+* features were chosen based on their relevance to price
+* for example, an airbnb with a large number of bedrooms would likely cost more
+* data was split randomly between training and testing groups, with 25% of data as testing
 
 ## Database
 
