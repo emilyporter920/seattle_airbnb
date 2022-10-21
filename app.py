@@ -38,7 +38,7 @@ def result():
     to_predict_list = list(map(float, to_predict_list))
     print('to_predict_list:', to_predict_list)
 
-    data_json = json.load(open('data.js'))
+    data_json = json.load(open('data.json'))
    #  print(data_json)
     
     dict_list = list()
