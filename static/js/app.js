@@ -88,11 +88,11 @@ function updateFilters() {
       }
       addMarkers(markers);
       console.log(filters);
-    } 
-    // else {
-    //   removeMarkers(markers);
-    //   markers = [];
-    // }
+
+   
+    }
+    
+
     // 10. Finally, rebuild the table using the filtered data
     buildTable(filteredData);
   }
