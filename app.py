@@ -24,7 +24,8 @@ def ValuePredictor(to_predict_list):
  print('to_predict:',to_predict)
  result = loaded_model.predict(to_predict)
  print('result:',result)
- return ((result[0] - 25)[0], (result[0] + 25)[0])
+ 
+ return f'${round((result[0] - 25)[0])} - ${round((result[0] + 25)[0])}'
 
 @app.route('/predict',methods = ['POST'])
 def result():
