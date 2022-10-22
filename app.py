@@ -6,6 +6,7 @@ from flask import Flask, render_template, request
 import json
 from sklearn.preprocessing import StandardScaler,OneHotEncoder
 from get_scaler import X_scaler
+from keras.models import load_model
 
 app = Flask(__name__)
 
@@ -19,7 +20,8 @@ def ValuePredictor(to_predict_list):
 #  print('after:',to_predict)
 #  to_predict = to_predict_list.reshape(1,53)
  print("This is the prediction numpy array:",to_predict_list)
- loaded_model = pickle.load(open('model.pkl','rb'))
+#  loaded_model = pickle.load(open('model.pkl','rb'))
+ loaded_model = load_model("model.h5")
  to_predict = np.asarray(to_predict_list, dtype=np.float32)
  print('to_predict:',to_predict)
  result = loaded_model.predict(to_predict)

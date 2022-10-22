@@ -13,18 +13,39 @@ markers = []
 
 // create marker
 function createMarker(row){
-  return new google.maps.Marker({
+   let marker = new google.maps.Marker({
     position: {
       lat: parseFloat(row.latitude), 
       lng: parseFloat(row.longitude)
-    }
+    },
   });
+  marker.content = row
+
+  return marker;
 }
 
 // add marker
 function addMarkers(markers){
   for (let marker of markers){
     marker.setMap(map);
+
+    let contentString = `
+    <h3 class="marker">${marker.content.listing_id}</h3>
+    <p class="marker">Bedrooms: ${marker.content.bedrooms}</p>
+    <p class="marker">Bathrooms: ${marker.content.bathrooms}</p>
+
+    `
+    const infowindow = new google.maps.InfoWindow({
+      content: contentString,
+    });
+    
+    marker.addListener("click", () => {
+      infowindow.open({
+        anchor: marker,
+        map,
+      });
+    });
+  
   }
 }
 
