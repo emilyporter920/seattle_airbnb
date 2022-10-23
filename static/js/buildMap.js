@@ -11,21 +11,41 @@ const map = new google.maps.Map(document.getElementById("map"), {
 // create empty list for markers 
 markers = []
 
-// create marker
+//create marker
 function createMarker(row){
-  return new google.maps.Marker({
-    position: {
-      lat: parseFloat(row.latitude), 
-      lng: parseFloat(row.longitude)
-    },
-    label: prediction
-  });
+  let marker = new google.maps.Marker({
+   position: {
+     lat: parseFloat(row.latitude), 
+     lng: parseFloat(row.longitude)
+   },
+   label: prediction
+ });
+ marker.content = row
+
+ return marker;
 }
 
 // add marker
 function addMarkers(markers){
   for (let marker of markers){
     marker.setMap(map);
+
+    let contentString = `
+    <h3 class="marker">${marker.content.listing_id}</h3>
+    <p class="marker">Bedrooms: ${marker.content.bedrooms}</p>
+    <p class="marker">Bathrooms: ${marker.content.bathrooms}</p>
+    `
+    const infowindow = new google.maps.InfoWindow({
+      content: contentString,
+    });
+    
+    marker.addListener("click", () => {
+      infowindow.open({
+        anchor: marker,
+        map,
+      });
+    });
+  
   }
 }
 
