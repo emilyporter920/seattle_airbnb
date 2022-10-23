@@ -103,3 +103,49 @@ function updateFilters() {
   // Build the table when the page loads
   buildTable(tableData);
 
+  $(document).ready(function(){
+    
+  })
+
+  // Dropdown for Bedrooms
+  var select = '';
+  for (i=1;i<=7;i++){
+    select += '<option val=' + i + '>' + i + '</option>';
+  }
+  $('#selBedroom').html(select);
+
+    // Dropdown for Bedrooms
+    var select = '';
+    for (i=1;i<=5;i++){
+      select += '<option val=' + i + '>' + i + '</option>';
+    }
+    $('#selBathroom').html(select);
+
+  // Dropdown for IDs
+  $("#selID").on("click", function() {
+    let dropdown = $('#selID');
+
+    dropdown.empty();
+    
+    dropdown.append('<option selected="true" disabled></option>');
+    dropdown.prop('selectedIndex', 0);
+    
+    const url = 'https://raw.githubusercontent.com/emilyporter920/seattle_airbnb/main/data.json';
+    
+    // Populate dropdown with list of provinces
+    $.getJSON(url, function (data) {
+      $.each(data, function (key, entry) {
+        dropdown.append($('<option></option>').attr('value', entry.listing_id).text(entry.listing_id));
+      })
+    });
+
+    $('#selID').val("value")
+  
+  });
+
+  // Dropdown for Month
+  var select = '';
+  for (i=1;i<=12;i++){
+    select += '<option val=' + i + '>' + i + '</option>';
+  }
+  $('#selMonth').html(select);

@@ -7,7 +7,7 @@
 * Graham Burch
 
 ## Selected Topic
-* Airbnbs in Seattle
+* Airbnb Pricing in Seattle.
 
 ## Source Data
 * Access our source data <a href="https://www.kaggle.com/datasets/airbnb/seattle" target="_blank">here</a>.
@@ -59,26 +59,32 @@
 * .
 
 ## Machine Learning Model
-* Sequential model
-* ReLU activation function 
-* 3 hidden layers, 500 epochs 
+* Sequential model.
+* ReLU activation function.
+* 3 hidden layers, 500 epochs.
 
 ### Reason for Choosing Machine Learning Model
-* Our data had several features
-* None of the models we had learned in this course could perform regression except for neural networks
-* Tensorflow is easy to use 
-* Limitations: requires a lot of data to train, data takes 5 minutes
-* Other benefits: very accurate, many aspects of the model are changeable, easy to save model
+* Our data had several features.
+* None of the models we had learned in this course could perform regression except for neural networks.
+* Comfortability with Tensorflow.
+* Limitations: 
+  * Requires large amounts of data to train.
+  * Data takes 5 minutes to run.
+* Other benefits: 
+  * High accuracy.
+    * Accuracy: **95%**
+    * R-value: **0.97**
+  * Easily modifiable.
 
 ### Processing Description
-* Certain variables, such as bed rooms, were transformed, e.g. square root on each data point
-* Applied one-hot encoding on each categorical feature, e.g. zipcode
-* Normalized data such that each feature had mean of 0 and standard deviation of 1
+* Certain variables, such as bed rooms, were transformed, e.g. square root on each data point.
+* Applied one-hot encoding on each categorical feature, e.g. zipcode.
+* Normalized data such that each feature had mean of 0 and standard deviation of 1.
 
 ### Feature Selection
-* Features were chosen based on their relevance to price
-* For example, an airbnb with a large number of bedrooms would likely cost more
-* Data was split randomly between training and testing groups, with 25% of data as testing
+* Features were chosen based on their relevance to price.
+  * An airbnb with a large number of bedrooms would likely cost more.
+* Data was split randomly between training and testing groups, with 25% of data as testing.
 
 ## Database
 

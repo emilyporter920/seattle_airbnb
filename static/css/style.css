@@ -55,3 +55,28 @@ th {
 .marker {
   color: black;
 }
+
+#selBedroom {
+  height: 30px;
+  width: 100px;
+}
+
+#selBathroom {
+  height: 30px;
+  width: 100px;
+}
+
+#selID {
+  height: 30px;
+  width: 100px;
+}
+
+#selMonth {
+  height: 30px;
+  width: 100px;
+}
+
+#form {
+  height:300px;
+  width: 500px;
+}
