@@ -11,35 +11,72 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Verdana, Helvetica, sans-serif;
   }
-
-  /* h1 {
-    font-size: 40px;
-  }
-
-  h2 {
-    font-size:40px;
-  }
-
-  h3 {
-    font-size:100px;
-  } */
 
 h1 {
-  font-size: 100px;
+  font-size: 200px;
+  font-family: Verdana, Helvetica, sans-serif;
+  font-weight: bold;
 }
   
 h2 {
+  font-size: 50px;
+  font-family: Verdana, Helvetica, sans-serif;
+}
+
+h3 {
   font-size: 30px;
+  font-family: Verdana, Helvetica, sans-serif;
 }
-  
+
 p {
-  font-size: 16px;
+  font-size: 17px;
+  font-family: Verdana, Helvetica, sans-serif;
 }
-  #map {
-    height: 800px;
-    /* The height is 400 pixels */
-    width: 100%;
-    /* The width is the width of the web page */
-  }
+
+#map {
+  height: 600px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
   
+label {
+  font-size: 15px;
+  font-family: Verdana, Helvetica, sans-serif;
+}
+
+th {
+  font-size: 15px;
+  font-family: Verdana, Helvetica, sans-serif;
+}
+
+.marker {
+  color: black;
+}
+
+#selBedroom {
+  height: 30px;
+  width: 100px;
+}
+
+#selBathroom {
+  height: 30px;
+  width: 100px;
+}
+
+#selID {
+  height: 30px;
+  width: 100px;
+}
+
+#selMonth {
+  height: 30px;
+  width: 100px;
+}
+
+#form {
+  height:300px;
+  width: 500px;
+}

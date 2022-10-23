@@ -4,6 +4,12 @@ import flask
 import pickle
 from flask import Flask, render_template, request
 import json
+<<<<<<< HEAD
+=======
+from sklearn.preprocessing import StandardScaler,OneHotEncoder
+from get_scaler import X_scaler
+from keras.models import load_model
+>>>>>>> f872f21cdd62a19e7278f1cac8c6a619779c9e31
 
 app = Flask(__name__)
 
@@ -14,7 +20,12 @@ def index():
 def ValuePredictor(to_predict_list):
 
  print("This is the prediction numpy array:",to_predict_list)
+<<<<<<< HEAD
  loaded_model = pickle.load(open('model.sav','rb'))
+=======
+#  loaded_model = pickle.load(open('model.pkl','rb'))
+ loaded_model = load_model("model.h5")
+>>>>>>> f872f21cdd62a19e7278f1cac8c6a619779c9e31
  to_predict = np.asarray(to_predict_list, dtype=np.float32)
  print('to_predict:',to_predict)
  result = loaded_model.predict(to_predict)
@@ -81,4 +92,8 @@ def result():
  return render_template('index.html',prediction=prediction)
 
 if __name__ == "__main__":
+<<<<<<< HEAD
  app.run(debug=True)
+=======
+ app.run(debug=True)
+>>>>>>> f872f21cdd62a19e7278f1cac8c6a619779c9e31

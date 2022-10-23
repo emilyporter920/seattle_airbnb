@@ -13,6 +13,7 @@ markers = []
 
 //create marker
 function createMarker(row){
+<<<<<<< HEAD
   let marker = new google.maps.Marker({
    position: {
      lat: parseFloat(row.latitude), 
@@ -23,6 +24,17 @@ function createMarker(row){
  marker.content = row
 
  return marker;
+=======
+   let marker = new google.maps.Marker({
+    position: {
+      lat: parseFloat(row.latitude), 
+      lng: parseFloat(row.longitude)
+    },
+  });
+  marker.content = row
+
+  return marker;
+>>>>>>> f872f21cdd62a19e7278f1cac8c6a619779c9e31
 }
 
 // add marker
