@@ -17,7 +17,8 @@ function createMarker(row){
     position: {
       lat: parseFloat(row.latitude), 
       lng: parseFloat(row.longitude)
-    }
+    },
+    label: prediction
   });
 }
 

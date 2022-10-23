@@ -20,6 +20,10 @@ We'll need to figure out how to merge.
     />
     <link rel="stylesheet" href="static/css/style.css">
 </head>
+<script>
+  var prediction = '{{ prediction }}'
+</script>
+<h1> Price Range: {{ prediction }}</h1>
 <body class="bg-dark">
     <div class="wrapper">
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
@@ -95,8 +99,8 @@ We'll need to figure out how to merge.
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
       <script src="static/js/data.js"></script>
-      <script src="static/js/buildMap.js"></script>
       <script src="static/js/app.js"></script>
+      <script src="static/js/buildMap.js"></script>
 
       <!-- <script src="static/js/app.js"></script> -->
 </body>

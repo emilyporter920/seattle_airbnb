@@ -78,7 +78,7 @@ def result():
     result = ValuePredictor(vals)
 
     prediction = str(result)
- return render_template('predict.html',prediction=prediction)
+ return render_template('index.html',prediction=prediction)
 
 if __name__ == "__main__":
  app.run(debug=True)
