@@ -109,6 +109,13 @@ function updateFilters() {
   }
   $('#selAccomodation').html(select);
 
+  // Dropdown for Bedroom Number
+  var select = '';
+  for (i=1;i<=7;i++){
+    select += '<option val=' + i + '>' + i + '</option>';
+  }
+  $('#selBedroom').html(select);
+
   // Dropdown for IDs
   $("#selID").on("click", function() {
     let dropdown = $('#selID');
@@ -146,9 +153,10 @@ function updateFilters() {
   $("#selAccomodation").change(function () {
     $('#selID').empty().append($('<option></option>').val('--Listing ID--').html('--Listing ID --'));
     var matchVal = $("#selAccommodation option:selected").text();
+    var matchVal2 = $("#selBedroom option:selected").text();
     a.filter(function (airbnb) {
-        if (airbnb.accommodates == matchVal) {
-            $("#selID").append($('<option></option>').val(airbnb.accommodates).html(airbnb.accommodates));
+        if (airbnb.accommodates == matchVal & airbnb.bedrooms == matchVal2) {
+            $("#selID").append($('<option></option>').val(airbnb.listing_id).html(airbnb.listing_id));
         }
     });
   });

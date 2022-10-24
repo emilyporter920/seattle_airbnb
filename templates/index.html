@@ -52,12 +52,15 @@ We'll need to figure out how to merge.
              </div>
          </div>
      </div>
-    </div> 
         <div class="row">
            <div class="col-sm">
             <form action="/predict" method="POST">
               <label for="listing_id" style="color:white"> Number to Accomodate: </label>
               <select id="selAccomodation"></select>
+              <br> 
+            <form action="/predict" method="POST">
+              <label for="listing_id" style="color:white"> Number of Bedrooms: </label>
+              <select id="selBedroom"></select>
               <br> 
             <form action="/predict" method="POST">
                <label for="listing_id" style="color:white"> Airbnb's Listing ID: </label>
@@ -71,7 +74,6 @@ We'll need to figure out how to merge.
            </div>
            <div id="map" class="col-md-8"></div>
          </div>
-       </div>
        <!-- <table>
          <thead>
            <tr>
