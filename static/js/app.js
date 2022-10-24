@@ -1,7 +1,5 @@
 // from data.js
-
 const tableData = data;
-
 
 // get table references
 var tbody = d3.select("tbody");
@@ -76,7 +74,6 @@ function updateFilters() {
       }
     })
 
-    
     // if _count is not empty, create marker for each item in filteredData
     // else clear markers
     removeMarkers(markers);
@@ -89,10 +86,8 @@ function updateFilters() {
       addMarkers(markers);
       console.log(filters);
 
-   
     }
     
-
     // 10. Finally, rebuild the table using the filtered data
     buildTable(filteredData);
   }
@@ -107,19 +102,12 @@ function updateFilters() {
     
   })
 
-  // Dropdown for Bedrooms
+  // Dropdown for Accommodation Number
   var select = '';
-  for (i=1;i<=7;i++){
+  for (i=1;i<=16;i++){
     select += '<option val=' + i + '>' + i + '</option>';
   }
-  $('#selBedroom').html(select);
-
-    // Dropdown for Bedrooms
-    var select = '';
-    for (i=1;i<=5;i++){
-      select += '<option val=' + i + '>' + i + '</option>';
-    }
-    $('#selBathroom').html(select);
+  $('#selAccomodation').html(select);
 
   // Dropdown for IDs
   $("#selID").on("click", function() {
@@ -149,3 +137,26 @@ function updateFilters() {
     select += '<option val=' + i + '>' + i + '</option>';
   }
   $('#selMonth').html(select);
+
+  // http://jsfiddle.net/6vvfr/12/
+
+  // Filter for JSON Listing values
+  var a = 'https://raw.githubusercontent.com/emilyporter920/seattle_airbnb/main/data.json';
+
+  $("#selAccomodation").change(function () {
+    $('#selID').empty().append($('<option></option>').val('--Listing ID--').html('--Listing ID --'));
+    var matchVal = $("#selAccommodation option:selected").text();
+    a.filter(function (airbnb) {
+        if (airbnb.accommodates == matchVal) {
+            $("#selID").append($('<option></option>').val(airbnb.accommodates).html(airbnb.accommodates));
+        }
+    });
+  });
+
+  $('#selID').change(function () {
+    //alert($(this).val());
+    //var getModelval = $('#model').val();
+    $('#selID').val($(this).val());
+    //$('#size').val(.val(id));
+
+  });

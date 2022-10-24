@@ -56,24 +56,19 @@ th {
   color: black;
 }
 
-#selBedroom {
+#selAccomodation {
   height: 30px;
-  width: 100px;
-}
-
-#selBathroom {
-  height: 30px;
-  width: 100px;
+  width: 130px;
 }
 
 #selID {
   height: 30px;
-  width: 100px;
+  width: 130px;
 }
 
 #selMonth {
   height: 30px;
-  width: 100px;
+  width: 130px;
 }
 
 #form {

@@ -1,4 +1,4 @@
-[
+const data = [
   {
     "listing_id": 241032,
     "listing_url": "https://www.airbnb.com/rooms/241032",
