@@ -145,26 +145,129 @@ function updateFilters() {
   }
   $('#selMonth').html(select);
 
-  // http://jsfiddle.net/6vvfr/12/
+  // // http://jsfiddle.net/6vvfr/12/
 
-  // Filter for JSON Listing values
-  var a = 'https://raw.githubusercontent.com/emilyporter920/seattle_airbnb/main/data.json';
+  // // Filter for JSON Listing values (this works in interacting with it - doesn't filter it)
+  // var a = 'https://raw.githubusercontent.com/emilyporter920/seattle_airbnb/main/data.json';
 
-  $("#selAccomodation").change(function () {
-    $('#selID').empty().append($('<option></option>').val('--Listing ID--').html('--Listing ID --'));
-    var matchVal = $("#selAccommodation option:selected").text();
-    var matchVal2 = $("#selBedroom option:selected").text();
-    a.filter(function (airbnb) {
-        if (airbnb.accommodates == matchVal & airbnb.bedrooms == matchVal2) {
-            $("#selID").append($('<option></option>').val(airbnb.listing_id).html(airbnb.listing_id));
-        }
-    });
-  });
+  // $("#selAccomodation").change(function () {
+  //   $('#selID').empty().append($('<option></option>').val('--Listing ID--').html('--Listing ID --'));
+  //   var matchVal = $("#selAccommodation option:selected").text();
+  //   var matchVal2 = $("#selBedroom option:selected").text();
+  //   a.filter(function (airbnb) {
+  //       if (airbnb.accommodates == matchVal & airbnb.bedrooms == matchVal2) {
+  //           $("#selID").append($('<option></option>').val(airbnb.listing_id).html(airbnb.listing_id));
+  //       }
+  //   });
+  // });
 
-  $('#selID').change(function () {
-    //alert($(this).val());
-    //var getModelval = $('#model').val();
-    $('#selID').val($(this).val());
-    //$('#size').val(.val(id));
+  // $('#selID').change(function () {
+  //   //alert($(this).val());
+  //   //var getModelval = $('#model').val();
+  //   $('#selID').val($(this).val());
+  //   //$('#size').val(.val(id));
 
-  });
+  // });
+
+
+  // //https://www.encodedna.com/javascript/practice-ground/default.htm?pg=cascading_select_dropdown_list_using_json_data
+  // $(document).ready(function () {
+
+  //   let airbnbdata = [];
+    
+  // 	// Fill the first dropdown with data.
+  //   $.getJSON('../../data.json', function (data) {
+
+    
+  //       let airbnblisting = [];
+
+  //       $.each(data, function (index, value) {
+  //           airbnblisting.push(value.Type);
+  //           airbnbdata = data;
+  //       });
+
+  //       // Remove duplicates. We want unique bird types.
+  //       airbnblisting = Array.from(new Set (arr_bird_type));
+        
+  //       // ref (https://www.encodedna.com/javascript/remove-duplicates-in-javascript-array-using-es6-set-and-from.htm)
+
+  //       $.each(airbnblisting, function (index, value) {
+  //           // Fill the first dropdown with unique bird types.
+  //           $('#selBedroom').append('<option value="' + value + '">' + value + '</option>');
+  //       });
+                
+  //   });
+    
+  //   $('#selBedroom').change(function () {
+  //       let type = this.options[this.selectedIndex].value;
+
+  //       let filterData = airbnbdata.filter(function(value) {
+  //           return value.Type === type;
+  //       });
+
+  //   // Wouldn't we need two?
+  //   // $('#sel').change(function () {
+  //   //   let type = this.options[this.selectedIndex].value;
+  
+  //   //   let filterData = airbnbdata.filter(function(value) {
+  //   //       return value.Type === type;
+  //   //   });
+
+  //       $('#selBedroom')
+  //           .empty()
+  //           .append('<option value=""> Listing ID </option>');
+
+  //       $.each(filterData, function (index, value) {
+  //           // Now, fill the second dropdown list with bird names.
+  //           $('#selID').append('<option value="' + value.ID + '">' + value.Name + '</option>');
+  //       });
+        
+  //   });
+  // });
+
+//   // Filtering based on bedroom number (this works in interacting with it - doesn't filter it)
+//   $('document').ready(function () { // Line 1
+//     $('#selBedroom').on('change',function () { // Line 2
+//         $('#selID').empty().append('<option value="null">-SELECT-</option>'); // Line 3
+//         var countryid = $(this).val(); //Line 4
+//         var href = 'https://raw.githubusercontent.com/emilyporter920/seattle_airbnb/main/data.json' + countryid //Line 5
+//         $.get(href, function (country, status) { // Line 6
+//             var states = country.states; // Line 7
+//             for (var i = 0; i <= states.length-1; i++) { // Line 8
+//                 $('#selID').append('<option value="' + states[i].listing_id + '">' + states[i].name + '</option>'); // Line 9
+//             }
+//         })
+//     })
+// })
+
+var subjectObject = 'https://raw.githubusercontent.com/emilyporter920/seattle_airbnb/main/data.json'
+
+window.onload = function() {
+  var accomodatesSel = document.getElementById("selAccommodates");
+  var bedroomSel = document.getElementById("selBedroom");
+  var idSel = document.getElementById("selID");
+  for (var x in subjectObject) {
+    accomodatesSel.options[accomodatesSel.options.length] = new Option(x, x);
+  }
+
+  accomodatesSel.onchange = function() {
+    //empty Chapters- and Topics- dropdowns
+    idSel.length = 1;
+    bedroomSel.length = 1;
+
+    //display correct values
+    for (var y in subjectObject[this.value]) {
+      bedroomSel.options[bedroomSel.options.length] = new Option(y, y);
+    }
+  }
+  bedroomSel.onchange = function() {
+    //empty Chapters dropdown
+    idSel.length = 1;
+
+    //display correct values
+    var z = subjectObject[accomodatesSel.value][this.value];
+    for (var i = 0; i < z.length; i++) {
+      idSel.options[idSel.options.length] = new Option(z[i], z[i]);
+    }
+  }
+}
