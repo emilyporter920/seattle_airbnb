@@ -52,11 +52,6 @@ font-family: Verdana, Helvetica, sans-serif;
 color: black;
 }
 
-#selAccomodation {
-height: 30px;
-width: 130px;
-}
-
 #selID {
 height: 30px;
 width: 130px;
@@ -67,19 +62,9 @@ height: 30px;
 width: 130px;
 }
 
-#selBedroom {
-height: 30px;
-width: 130px;
-}
-
 .col-md-4 {
 flex: 0 0 33.33333%;
 max-width: 20%;
-}
-
-.Scrollable {
-Overflow-x:scroll; 
-Overflow-y:scroll; 
 }
 
 .social-icons .social-icon-emily  {
@@ -92,7 +77,28 @@ Overflow-y:scroll;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
-  /* margin-right: 1.5rem; */
+}
+
+.social-icons .social-icon-emily:before  {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 5px;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+
+.social-icons .social-icon-emily:hover:before  {
+  opacity:1;
+  visibility:visible;
 }
 
 .social-icons .social-icon-christine {
@@ -105,7 +111,28 @@ Overflow-y:scroll;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
-  /* margin-right: 1.5rem; */
+}
+
+.social-icons .social-icon-christine:before  {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 5px;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+
+.social-icons .social-icon-christine:hover:before  {
+  opacity:1;
+  visibility:visible;
 }
 
 .social-icons .social-icon-john {
@@ -118,7 +145,28 @@ Overflow-y:scroll;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
-  /* margin-right: 1.5rem; */
+}
+
+.social-icons .social-icon-john:before  {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 5px;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+
+.social-icons .social-icon-john:hover:before  {
+  opacity:1;
+  visibility:visible;
 }
 
 .social-icons .social-icon-graham {
@@ -131,18 +179,34 @@ Overflow-y:scroll;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
-  /* margin-right: 1.5rem; */
+}
+
+.social-icons .social-icon-graham:before  {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 5px;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+
+.social-icons .social-icon-graham:hover:before  {
+  opacity:1;
+  visibility:visible;
 }
 
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
 
-/* .social-icons .social-icon:hover {
-  background-color: #8100fa;
-} */
-
-/* Covering up jumbotron */
 .wrapper{
   width: 100%;
   position: fixed;        
@@ -202,3 +266,4 @@ th {
   width: 80px;
   padding: 5px; 
 }
+
