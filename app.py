@@ -48,6 +48,7 @@ def result():
     counter = 1
 
     for i in data_json:
+      del i['listing_url']
       if i['listing_id'] == to_predict_list[0]:
          i['month'] = to_predict_list[1]
          dict_list.append(i)
@@ -87,7 +88,7 @@ def result():
     print('Here are the remaining columns:',df.columns)
     val = X_scaler.transform(df)
     
-    print(val)
+    
     
     result = ValuePredictor(val)
 
