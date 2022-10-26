@@ -48,10 +48,17 @@ font-family: Verdana, Helvetica, sans-serif;
 }
 
 th {
+<<<<<<< HEAD
 font-size: 15px;
 font-family: Verdana, Helvetica, sans-serif;
 width: 80px;
 padding: 5px; 
+=======
+  font-size: 15px;
+  font-family: Verdana, Helvetica, sans-serif;
+  width: 80px;
+  padding: 5px; 
+>>>>>>> 64190be656c03125341db35ece1e162214816f15
 }
 
 .marker {
@@ -105,4 +112,14 @@ Overflow-y:scroll;
 }
 .social-icons .social-icon:hover {
   background-color: #1da039;
+}
+
+.col-md-4 {
+  flex: 0 0 33.33333%;
+  max-width: 20%;
+}
+
+.Scrollable {
+  Overflow-x:scroll; 
+  Overflow-y:scroll; 
 }
