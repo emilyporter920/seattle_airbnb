@@ -1,50 +1,50 @@
 body {
 
-    color: #f7f7f7;
-  }
-  .jumbotron {
-    background-image: url("/static/images/spaceneedle.jpg");
-    background-size: cover;
-    background-position: 0% 15%;
-    height: 350px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Verdana, Helvetica, sans-serif;
-  }
+  color: #f7f7f7;
+}
+.jumbotron {
+  background-image: url("/static/images/spaceneedle.jpg");
+  background-size: cover;
+  background-position: 0% 15%;
+  height: 350px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Helvetica, sans-serif;
+}
 
 h1 {
-  font-size: 200px;
-  font-family: Verdana, Helvetica, sans-serif;
-  font-weight: bold;
+font-size: 200px;
+font-family: Verdana, Helvetica, sans-serif;
+font-weight: bold;
 }
-  
+
 h2 {
-  font-size: 50px;
-  font-family: Verdana, Helvetica, sans-serif;
+font-size: 50px;
+font-family: Verdana, Helvetica, sans-serif;
 }
 
 h3 {
-  font-size: 30px;
-  font-family: Verdana, Helvetica, sans-serif;
+font-size: 30px;
+font-family: Verdana, Helvetica, sans-serif;
 }
 
 p {
-  font-size: 17px;
-  font-family: Verdana, Helvetica, sans-serif;
+font-size: 17px;
+font-family: Verdana, Helvetica, sans-serif;
 }
 
 #map {
-  height: 600px;
-  /* The height is 400 pixels */
-  width: 100%;
-  /* The width is the width of the web page */
+height: 600px;
+/* The height is 400 pixels */
+width: 100%;
+/* The width is the width of the web page */
 }
-  
+
 label {
-  font-size: 15px;
-  font-family: Verdana, Helvetica, sans-serif;
+font-size: 15px;
+font-family: Verdana, Helvetica, sans-serif;
 }
 
 th {
@@ -55,27 +55,56 @@ th {
 }
 
 .marker {
-  color: black;
+color: black;
 }
 
 #selAccomodation {
-  height: 30px;
-  width: 130px;
+height: 30px;
+width: 130px;
 }
 
 #selID {
-  height: 30px;
-  width: 130px;
+height: 30px;
+width: 130px;
 }
 
 #selMonth {
-  height: 30px;
-  width: 130px;
+height: 30px;
+width: 130px;
 }
 
 #selBedroom {
-  height: 30px;
-  width: 130px;
+height: 30px;
+width: 130px;
+}
+
+.col-md-4 {
+flex: 0 0 33.33333%;
+max-width: 20%;
+}
+
+.Scrollable {
+Overflow-x:scroll; 
+Overflow-y:scroll; 
+}
+
+.social-icons .social-icon-emily {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+.social-icons .social-icon:last-child {
+  margin-right: 0;
+}
+.social-icons .social-icon:hover {
+  background-color: #1da039;
 }
 
 .col-md-4 {
