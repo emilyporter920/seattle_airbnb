@@ -1,89 +1,204 @@
 body {
 
-    color: #f7f7f7;
-  }
-  .jumbotron {
-    background-image: url("/static/images/spaceneedle.jpg");
-    background-size: cover;
-    background-position: 0% 15%;
-    height: 350px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Verdana, Helvetica, sans-serif;
-  }
+  color: #f7f7f7;
+}
+.jumbotron {
+  background-image: url("/static/images/spaceneedle.jpg");
+  background-size: cover;
+  background-position: 0% 15%;
+  height: 350px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Helvetica, sans-serif;
+}
 
 h1 {
-  font-size: 200px;
-  font-family: Verdana, Helvetica, sans-serif;
-  font-weight: bold;
+font-size: 200px;
+font-family: Verdana, Helvetica, sans-serif;
+font-weight: bold;
 }
-  
+
 h2 {
-  font-size: 50px;
-  font-family: Verdana, Helvetica, sans-serif;
+font-size: 50px;
+font-family: Verdana, Helvetica, sans-serif;
 }
 
 h3 {
-  font-size: 30px;
-  font-family: Verdana, Helvetica, sans-serif;
+font-size: 30px;
+font-family: Verdana, Helvetica, sans-serif;
 }
 
 p {
-  font-size: 17px;
-  font-family: Verdana, Helvetica, sans-serif;
+font-size: 17px;
+font-family: Verdana, Helvetica, sans-serif;
 }
 
 #map {
-  height: 600px;
-  /* The height is 400 pixels */
-  width: 100%;
-  /* The width is the width of the web page */
+height: 600px;
+/* The height is 400 pixels */
+width: 100%;
+/* The width is the width of the web page */
 }
-  
+
 label {
-  font-size: 15px;
-  font-family: Verdana, Helvetica, sans-serif;
+font-size: 15px;
+font-family: Verdana, Helvetica, sans-serif;
+}
+
+
+.marker {
+color: black;
+}
+
+#selAccomodation {
+height: 30px;
+width: 130px;
+}
+
+#selID {
+height: 30px;
+width: 130px;
+}
+
+#selMonth {
+height: 30px;
+width: 130px;
+}
+
+#selBedroom {
+height: 30px;
+width: 130px;
+}
+
+.col-md-4 {
+flex: 0 0 33.33333%;
+max-width: 20%;
+}
+
+.Scrollable {
+Overflow-x:scroll; 
+Overflow-y:scroll; 
+}
+
+.social-icons .social-icon-emily  {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.0rem;
+  width: 2.0rem;
+  background-color: #252627;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  /* margin-right: 1.5rem; */
+}
+
+.social-icons .social-icon-christine {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.0rem;
+  width: 2.0rem;
+  background-color: #252627;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  /* margin-right: 1.5rem; */
+}
+
+.social-icons .social-icon-john {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.0rem;
+  width: 2.0rem;
+  background-color: #252627;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  /* margin-right: 1.5rem; */
+}
+
+.social-icons .social-icon-graham {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.0rem;
+  width: 2.0rem;
+  background-color: #252627;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  /* margin-right: 1.5rem; */
+}
+
+.social-icons .social-icon:last-child {
+  margin-right: 0;
+}
+
+/* .social-icons .social-icon:hover {
+  background-color: #8100fa;
+} */
+
+/* Covering up jumbotron */
+.wrapper{
+  width: 100%;
+  position: fixed;        
+  background-color: #252627;
+  /* padding: 10px 0; */
+  color: #fff;
+  z-index: 2;
+}
+.wrapper{
+  top: 0;
+}
+
+.navbar-brand {
+  background-color: #252627;
+}
+
+.navbar-top {
+  background-color: #252627;
+}
+
+.social-icons {
+  top:0;
+  right:0;
+  position:absolute;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+input {
+  display: flex;
+  flex-direction: row;
+}
+
+.tableContainer {
+  padding:10px;
+  height:300px;
+  overflow:scroll;
+  overflow-x:hidden;
+}
+
+.table {
+  position:sticky;
+  top:0;
+  width:100%;
 }
 
 th {
+  background: #343a40;
+  position: sticky;
+  top: 0px; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
   font-size: 15px;
   font-family: Verdana, Helvetica, sans-serif;
   width: 80px;
   padding: 5px; 
-}
-
-.marker {
-  color: black;
-}
-
-#selAccomodation {
-  height: 30px;
-  width: 130px;
-}
-
-#selID {
-  height: 30px;
-  width: 130px;
-}
-
-#selMonth {
-  height: 30px;
-  width: 130px;
-}
-
-#selBedroom {
-  height: 30px;
-  width: 130px;
-}
-
-.col-md-4 {
-  flex: 0 0 33.33333%;
-  max-width: 20%;
-}
-
-.Scrollable {
-  Overflow-x:scroll; 
-  Overflow-y:scroll; 
 }

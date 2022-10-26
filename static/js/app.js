@@ -1,7 +1,21 @@
 // from data.js
 
 const tableData = data;
-
+const filterKeys = [   
+  "listing_id", 
+  "listing_url",
+  "city",
+  "state",
+  "zipcode",
+  "latitude",
+  "longitude",
+  "accommodates",
+  "bathrooms",
+  "bedrooms",
+  "beds",
+  "price",
+  "review_scores_rating"
+]
 
 // get table references
 var tbody = d3.select("tbody");
@@ -71,7 +85,7 @@ function updateFilters() {
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values (Object.entries() means it will return an array of a given objects [key, value])
     Object.entries(filters).forEach(([key, value])=> {
-      if (key != "_count"){
+      if (filterKeys.includes(key)){
         filteredData=filteredData.filter(row=>row[key]==value);
       }
     })
