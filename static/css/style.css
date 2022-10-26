@@ -50,6 +50,8 @@ label {
 th {
   font-size: 15px;
   font-family: Verdana, Helvetica, sans-serif;
+  width: 80px;
+  padding: 5px; 
 }
 
 .marker {
@@ -74,4 +76,14 @@ th {
 #selBedroom {
   height: 30px;
   width: 130px;
+}
+
+.col-md-4 {
+  flex: 0 0 33.33333%;
+  max-width: 20%;
+}
+
+.Scrollable {
+  Overflow-x:scroll; 
+  Overflow-y:scroll; 
 }
