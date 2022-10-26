@@ -47,25 +47,6 @@ font-size: 15px;
 font-family: Verdana, Helvetica, sans-serif;
 }
 
-th {
-<<<<<<< HEAD
-<<<<<<< HEAD
-font-size: 15px;
-font-family: Verdana, Helvetica, sans-serif;
-width: 80px;
-padding: 5px; 
-=======
-=======
->>>>>>> 327403a94bc8be6c6e47bc4021f2907484e77771
-  font-size: 15px;
-  font-family: Verdana, Helvetica, sans-serif;
-  width: 80px;
-  padding: 5px; 
-<<<<<<< HEAD
->>>>>>> 64190be656c03125341db35ece1e162214816f15
-=======
->>>>>>> 327403a94bc8be6c6e47bc4021f2907484e77771
-}
 
 .marker {
 color: black;
@@ -216,4 +197,8 @@ th {
   position: sticky;
   top: 0px; /* Don't forget this, required for the stickiness */
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+  font-size: 15px;
+  font-family: Verdana, Helvetica, sans-serif;
+  width: 80px;
+  padding: 5px; 
 }
