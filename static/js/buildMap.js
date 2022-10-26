@@ -33,6 +33,7 @@ function addMarkers(markers){
     <h3 class="marker">${marker.content.listing_id}</h3>
     <p class="marker">Bedrooms: ${marker.content.bedrooms}</p>
     <p class="marker">Bathrooms: ${marker.content.bathrooms}</p>
+    <p class="marker">URL: ${marker.content.listing_url}</p>
     `
     const infowindow = new google.maps.InfoWindow({
       content: contentString,
