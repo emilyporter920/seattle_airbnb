@@ -88,31 +88,119 @@ Overflow-x:scroll;
 Overflow-y:scroll; 
 }
 
-.social-icons .social-icon-emily {
+.social-icons .social-icon-emily  {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 3.5rem;
-  width: 3.5rem;
-  background-color: #495057;
+  height: 2.0rem;
+  width: 2.0rem;
+  background-color: #252627;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
-  margin-right: 1.5rem;
+  /* margin-right: 1.5rem; */
 }
+
+.social-icons .social-icon-christine {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.0rem;
+  width: 2.0rem;
+  background-color: #252627;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  /* margin-right: 1.5rem; */
+}
+
+.social-icons .social-icon-john {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.0rem;
+  width: 2.0rem;
+  background-color: #252627;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  /* margin-right: 1.5rem; */
+}
+
+.social-icons .social-icon-graham {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.0rem;
+  width: 2.0rem;
+  background-color: #252627;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  /* margin-right: 1.5rem; */
+}
+
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
-.social-icons .social-icon:hover {
-  background-color: #1da039;
+
+/* .social-icons .social-icon:hover {
+  background-color: #8100fa;
+} */
+
+/* Covering up jumbotron */
+.wrapper{
+  width: 100%;
+  position: fixed;        
+  background-color: #252627;
+  /* padding: 10px 0; */
+  color: #fff;
+  z-index: 2;
+}
+.wrapper{
+  top: 0;
 }
 
-.col-md-4 {
-  flex: 0 0 33.33333%;
-  max-width: 20%;
+.navbar-brand {
+  background-color: #252627;
 }
 
-.Scrollable {
-  Overflow-x:scroll; 
-  Overflow-y:scroll; 
+.navbar-top {
+  background-color: #252627;
+}
+
+.social-icons {
+  top:0;
+  right:0;
+  position:absolute;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+input {
+  display: flex;
+  flex-direction: row;
+}
+
+.tableContainer {
+  padding:10px;
+  height:300px;
+  overflow:scroll;
+  overflow-x:hidden;
+}
+
+.table {
+  position:sticky;
+  top:0;
+  width:100%;
+}
+
+th {
+  background: #343a40;
+  position: sticky;
+  top: 0px; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
 }
