@@ -7,7 +7,6 @@ import json
 from sklearn.preprocessing import StandardScaler,OneHotEncoder
 from get_scaler import X_scaler
 from keras.models import load_model
-import calendar
 
 app = Flask(__name__)
 
@@ -15,19 +14,19 @@ app = Flask(__name__)
 def index():
  return flask.render_template('index.html')
 
-def ValuePredictor(input, to_predict_list):
+def ValuePredictor(to_predict_list):
 #  print('before:',to_predict_list)
 #  to_predict = np.array(to_predict_list).reshape(1,53)
 #  print('after:',to_predict)
 #  to_predict = to_predict_list.reshape(1,53)
- print("This is the prediction numpy array:",input)
+ print("This is the prediction numpy array:",to_predict_list)
 #  loaded_model = pickle.load(open('model.pkl','rb'))
  loaded_model = load_model("model.h5")
- to_predict = np.asarray(input, dtype=np.float32)
+ to_predict = np.asarray(to_predict_list, dtype=np.float32)
  print('to_predict:',to_predict)
  result = loaded_model.predict(to_predict)
  print('result:',result)
- return {"listing_id": to_predict_list[0], "month": "in " + calendar.month_name[int(to_predict_list[1])], 'lower': round((result[0] - 25)[0]), 'upper': round((result[0] + 25)[0])}
+ return ((result[0] - 25)[0], (result[0] + 25)[0])
 
 @app.route('/predict',methods = ['POST'])
 def result():
@@ -49,7 +48,6 @@ def result():
     counter = 1
 
     for i in data_json:
-      del i['listing_url']
       if i['listing_id'] == to_predict_list[0]:
          i['month'] = to_predict_list[1]
          dict_list.append(i)
@@ -89,13 +87,12 @@ def result():
     print('Here are the remaining columns:',df.columns)
     val = X_scaler.transform(df)
     
+    print(val)
     
-    
-    result = ValuePredictor(val, to_predict_list)
-    
-    
-    
- return render_template('index.html',prediction= f"${result['lower']} - ${result['upper']}", month_num = int(to_predict_list[1]), month_name = result['month'], listing_id = int(result['listing_id']))
+    result = ValuePredictor(val)
+
+    prediction = str(result)
+ return render_template('predict.html',prediction=prediction)
 
 if __name__ == "__main__":
  app.run(debug=True)

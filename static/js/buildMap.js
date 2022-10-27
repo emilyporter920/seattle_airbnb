@@ -18,7 +18,7 @@ function createMarker(row){
       lat: parseFloat(row.latitude), 
       lng: parseFloat(row.longitude)
     },
-    label: prediction
+    label : prediction,
   });
   marker.content = row
 
@@ -31,12 +31,15 @@ function addMarkers(markers){
     marker.setMap(map);
 
     let contentString = `
-    <h3 class="marker">${marker.content.listing_id}</h3>
-    <p class="marker">Bedrooms: ${marker.content.bedrooms}</p>
-    <p class="marker">Bathrooms: ${marker.content.bathrooms}</p>
-    <p class="marker">URL: ${marker.content.listing_url}</p>
-    <p class="marker">${document.getElementById("prediction").innerHTML} </p>
+    <h4 class="marker">${marker.content.listing_id}</h4>
+    <h5 class="marker">Bedrooms: ${marker.content.bedrooms}</h5>
+    <h5 class="marker">Bathrooms: ${marker.content.bathrooms}</h5>
+    <h6 class="marker">URL: <a href=${marker.content.listing_url}> ${marker.content.listing_url}</a></h6>
     `
+    //<h5 class="marker">Price Per Night: ${prediction}</h5>
+
+    
+
     const infowindow = new google.maps.InfoWindow({
       content: contentString,
     });
@@ -50,6 +53,7 @@ function addMarkers(markers){
   
   }
 }
+
 
 // clear markers
 function removeMarkers(markers){

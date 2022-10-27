@@ -267,3 +267,18 @@ th {
   padding: 5px; 
 }
 
+.h4, h4 {
+  font-size: 25px;
+  font-family: Verdana, Helvetica, sans-serif; 
+}
+
+.h5, h5 {
+  font-size: 20px;
+  font-family: Verdana, Helvetica, sans-serif;
+}
+
+/* Make link clickable here */
+.h6, h6 {
+  font-size: 20px;
+  font-family: Verdana, Helvetica, sans-serif;
+}
