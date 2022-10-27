@@ -69,6 +69,7 @@ function updateFilters() {
     }
     
     else {
+      filters["listing_id"] = d3.select("input")
       delete filters[idElement];
       filters._count--;
     }

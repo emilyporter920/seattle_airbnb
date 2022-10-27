@@ -27,7 +27,7 @@ def ValuePredictor(input, to_predict_list):
  print('to_predict:',to_predict)
  result = loaded_model.predict(to_predict)
  print('result:',result)
- return f'${round((result[0] - 25)[0])} - ${round((result[0] + 25)[0])} in {calendar.month_name[int(to_predict_list[1])]}'
+ return {"listing_id": to_predict_list[0], "month": "in " + calendar.month_name[int(to_predict_list[1])], 'lower': round((result[0] - 25)[0]), 'upper': round((result[0] + 25)[0])}
 
 @app.route('/predict',methods = ['POST'])
 def result():
@@ -92,9 +92,10 @@ def result():
     
     
     result = ValuePredictor(val, to_predict_list)
-
-    prediction = str(result)
- return render_template('index.html',prediction=prediction)
+    
+    
+    
+ return render_template('index.html',prediction= f"${result['lower']} - ${result['upper']}", month_num = int(to_predict_list[1]), month_name = result['month'], listing_id = int(result['listing_id']))
 
 if __name__ == "__main__":
  app.run(debug=True)
