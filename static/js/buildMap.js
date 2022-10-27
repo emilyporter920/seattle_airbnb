@@ -11,13 +11,14 @@ const map = new google.maps.Map(document.getElementById("map"), {
 // create empty list for markers 
 markers = []
 
-// create marker
+//create marker
 function createMarker(row){
    let marker = new google.maps.Marker({
     position: {
       lat: parseFloat(row.latitude), 
       lng: parseFloat(row.longitude)
     },
+    label: prediction
   });
   marker.content = row
 
