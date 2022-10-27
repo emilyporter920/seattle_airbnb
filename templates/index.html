@@ -69,6 +69,7 @@ We'll need to figure out how to merge.
                  <p style="color:white">
                  Would you like to visit Seattle? Experience attractions such as the Space Needle? Maybe you would like to visit beautiful Mt. Rainer? Let planning and budgeting be one less worry and use this interactive tool to help budget your future stay!
                  </p>
+                 <h2 id="prediction"> Price Range: {{ prediction }} {{ month_name }} </h2>
              </div>
          </div>
      </div>
@@ -77,10 +78,10 @@ We'll need to figure out how to merge.
            <div class="col-md-4">
              <form action="/predict" method="POST">
                <label for="listing_id" style="color:white"> Listing ID: </label>
-               <input type="number" step="1" id="listing_id" name="listing_id">
+               <input type="number" step="1" id="listing_id" name="listing_id" value="{{ listing_id }}">
                <br>
                <label for="month" style="color:white"> Month (1-12): </label>
-               <input type="number" step="1" id="month" name="month">
+               <input type="number" step="1" id="month" name="month" value="{{ month_num }}">
                <br>
                <input type="submit" value="Submit">
              </form>

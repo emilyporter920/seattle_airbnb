@@ -35,6 +35,7 @@ function addMarkers(markers){
     <p class="marker">Bedrooms: ${marker.content.bedrooms}</p>
     <p class="marker">Bathrooms: ${marker.content.bathrooms}</p>
     <p class="marker">URL: ${marker.content.listing_url}</p>
+    <p class="marker">${document.getElementById("prediction").innerHTML} </p>
     `
     const infowindow = new google.maps.InfoWindow({
       content: contentString,
