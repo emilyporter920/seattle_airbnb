@@ -26,7 +26,7 @@ def ValuePredictor(to_predict_list):
  print('to_predict:',to_predict)
  result = loaded_model.predict(to_predict)
  print('result:',result)
- return ((result[0] - 25)[0], (result[0] + 25)[0])
+ return f'${round((result[0] - 25)[0])} - ${round((result[0] + 25)[0])}'
 
 @app.route('/predict',methods = ['POST'])
 def result():
@@ -48,6 +48,7 @@ def result():
     counter = 1
 
     for i in data_json:
+      del i['listing_url']
       if i['listing_id'] == to_predict_list[0]:
          i['month'] = to_predict_list[1]
          dict_list.append(i)
@@ -92,7 +93,7 @@ def result():
     result = ValuePredictor(val)
 
     prediction = str(result)
- return render_template('predict.html',prediction=prediction)
+ return render_template('index.html',prediction=prediction, listing_id= int(to_predict_list[0]), month_num = int(to_predict_list[1]))
 
 if __name__ == "__main__":
  app.run(debug=True)
