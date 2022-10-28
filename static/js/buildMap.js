@@ -17,8 +17,7 @@ function createMarker(row){
     position: {
       lat: parseFloat(row.latitude), 
       lng: parseFloat(row.longitude)
-    },
-    label : prediction,
+    }
   });
   marker.content = row
 
@@ -35,6 +34,7 @@ function addMarkers(markers){
     <h5 class="marker">Bedrooms: ${marker.content.bedrooms}</h5>
     <h5 class="marker">Bathrooms: ${marker.content.bathrooms}</h5>
     <h6 class="marker">URL: <a href=${marker.content.listing_url}> ${marker.content.listing_url}</a></h6>
+    <h5 class="marker">Price: ${document.getElementById("prediction").innerHTML}</h5>
     `
     //<h5 class="marker">Price Per Night: ${prediction}</h5>
 
