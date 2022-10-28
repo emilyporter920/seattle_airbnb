@@ -55,9 +55,6 @@
   >
 </p>
 
-## Exploratory Data
-* .
-
 ## Machine Learning Model
 * Sequential model.
 * ReLU activation function.
@@ -106,7 +103,6 @@
 * Access our presentation slides <a href="https://docs.google.com/presentation/d/1icmLt7eO1Spff29124g_vV3Oj6s1S81FOCbXvFXCNaw/edit?usp=sharing" target="_blank">here</a>.
 
 ## Dashboard
-* Access our dashboard <a href="https://emilyporter920.github.io/seattle_airbnb/templates/index.html" target="_blank">here</a>.
 * Access our live dashboard demo here (ADD LINK).
 
 ## Tableau Integration
@@ -119,6 +115,3 @@
 </p>
 
 * Access the Tableau dashboard <a href="https://public.tableau.com/app/profile/emily.porter7135/viz/Dashboard_16656930095490/AirbnbPriceTrends?publish=yes" target="_blank">here</a>.
-
-## R Integration
-* 

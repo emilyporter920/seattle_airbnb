@@ -71,6 +71,30 @@ flex: 0 0 33.33333%;
 max-width: 20%;
 }
 
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-1.5deg);
+  }
+  20% {
+    transform: rotateZ(1.5deg);
+  }
+  25% {
+    transform: rotateZ(-1.5deg);
+  }
+  30% {
+    transform: rotateZ(1.5deg);
+  }
+  35% {
+    transform: rotateZ(-1.5deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
 .social-icons .social-icon-emily  {
   display: inline-flex;
   align-items: center;
@@ -81,6 +105,10 @@ max-width: 20%;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
+  transform-origin: 50% 5em;
+  left: calc(50% - 3em);
+  top: calc(50% - 2em);
+  animation: wiggle 2s linear infinite;
 }
 
 .social-icons .social-icon-emily:before  {
@@ -115,6 +143,10 @@ max-width: 20%;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
+  transform-origin: 50% 5em;
+  left: calc(50% - 3em);
+  top: calc(50% - 2em);
+  animation: wiggle 2s linear infinite;
 }
 
 .social-icons .social-icon-christine:before  {
@@ -149,6 +181,10 @@ max-width: 20%;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
+  transform-origin: 50% 5em;
+  left: calc(50% - 3em);
+  top: calc(50% - 2em);
+  animation: wiggle 2s linear infinite;
 }
 
 .social-icons .social-icon-john:before  {
@@ -183,6 +219,10 @@ max-width: 20%;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
+  transform-origin: 50% 5em;
+  left: calc(50% - 3em);
+  top: calc(50% - 2em);
+  animation: wiggle 2s linear infinite;
 }
 
 .social-icons .social-icon-graham:before  {
@@ -248,7 +288,7 @@ input {
 }
 
 .tableContainer {
-  padding:10px;
+  /* padding:10px; */
   height:300px;
   overflow:scroll;
   overflow-x:hidden;
@@ -285,4 +325,8 @@ th {
 .h6, h6 {
   font-size: 20px;
   font-family: Verdana, Helvetica, sans-serif;
+}
+
+.img {
+
 }
