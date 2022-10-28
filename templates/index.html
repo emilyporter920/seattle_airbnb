@@ -60,7 +60,7 @@ We'll need to figure out how to merge.
          <h1 class="display-4">Find Your Perfect Stay in Seattle
          </h1>
      </div>
-     <div class="container-fluid">
+     <div class="container-fluid"> 
          <div class="row">
              <div class="col-md-4"> 
                  <h3 style="color:white">Seattle Airbnb <small><br>Find Your Perfect Stay</small></h3>
@@ -72,15 +72,16 @@ We'll need to figure out how to merge.
              </div>
          </div>
      </div>
+     <h7 style="text-align:center"  id="prediction"> {{ prediction }} </h7>
      <div class="container-fluid">
          <div class="row">
            <div class="col-md-4">
              <form action="/predict" method="POST">
                <label for="listing_id" style="color:white"> Listing ID: </label>
-               <input type="number" step="1" id="listing_id" name="listing_id">
+               <input type="number" step="1" id="listing_id" name="listing_id" value="{{ listing_id }}">
                <br>
                <label for="month" style="color:white"> Month (1-12): </label>
-               <input type="number" step="1" id="month" name="month">
+               <input type="number" step="1" id="month" name="month" value="{{ month_num }}">
                <br>
                <input type="submit" value="Submit">
              </form>
