@@ -44,6 +44,16 @@ var filters={
   _count: 0
 };
 
+function addFilterValue(filters, idElement, elementValue) {
+  filters[idElement] = elementValue;
+  filters._count++;
+}
+
+function removeFilterValue(filters, idElement) {
+  delete filters[idElement];
+  filters._count--;
+}
+
 // 3. Use this function to update the filters. 
 function updateFilters() {
 
@@ -64,13 +74,15 @@ function updateFilters() {
     // 5. If a filter value was entered then add that filterId and value
     // to the filters list. Otherwise, clear that filter from the filters object.
     if (elementValue) {
-      filters[idElement] = elementValue;
-      filters._count++;
+      // filters[idElement] = elementValue;
+      // filters._count++;
+      addFilterValue(filters, idElement, elementValue);
     }
     
     else {
-      delete filters[idElement];
-      filters._count--;
+      removeFilterValue(filters, idElement);
+      // delete filters[idElement];
+      // filters._count--;
     }
 
     // 6. Call function to apply all filters and rebuild the table
@@ -114,5 +126,21 @@ function updateFilters() {
   // 2. Attach an event to listen for changes to each filter
   d3.selectAll("input").on("change", updateFilters);
   
+
+  
   // Build the table when the page loads
   buildTable(tableData);
+
+
+  const inputs = document.querySelectorAll("input");
+
+  // console.log(inputs);
+  
+  inputs.forEach(filter => {
+    if (filter.value && filter.name){
+      addFilterValue(filters, filter.name, filter.value);
+    }
+
+    filterTable();
+  })
+
