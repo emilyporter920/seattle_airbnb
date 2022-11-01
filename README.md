@@ -115,4 +115,4 @@
   >
 </p>
 
-* Access the Tableau dashboard <a href="https://public.tableau.com/app/profile/emily.porter7135/viz/Dashboard_16656930095490/AirbnbPriceTrends?publish=yes" target="_blank">here</a>.
+* Access the Tableau dashboard <a href="https://public.tableau.com/app/profile/emily.porter7135/viz/SeattleAirbnb_16668896790980/AirbnbPriceTrends?publish=yes" target="_blank">here</a>.
