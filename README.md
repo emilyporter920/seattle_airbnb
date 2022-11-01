@@ -18,7 +18,7 @@
 
 ## Communication
 * In order to keep teammates updated - google hangouts, slack, and regular zoom meetings were utilized.
-* Our tracker list created using google sheets can be accessed <a href="https://docs.google.com/spreadsheets/d/1tLIKKyJ99hu_YNYIIDx7AmVLVdwfLJwwXPZTy9znj38/edit?usp=sharing" target="_blank">here</a>.
+* Access our tracker list created using google sheets <a href="https://docs.google.com/spreadsheets/d/1tLIKKyJ99hu_YNYIIDx7AmVLVdwfLJwwXPZTy9znj38/edit?usp=sharing" target="_blank">here</a>.
 
 ## Tools Used
 * Creating Database
@@ -103,7 +103,8 @@
 * Access our presentation slides <a href="https://docs.google.com/presentation/d/1icmLt7eO1Spff29124g_vV3Oj6s1S81FOCbXvFXCNaw/edit?usp=sharing" target="_blank">here</a>.
 
 ## Dashboard
-* Access our live dashboard demo here (ADD LINK).
+* Access our live dashboard demo <a href="https://vimeo.com/766128686" target="_blank">here</a>.
+
 
 ## Tableau Integration
 * Below is a tableau dashboard that shows the prices based on latitude and longitude using both a scatter plot and a map with a filter based on the price per night. There is also a scatter plot showing a steady increase in price based on the number of bedrooms for each listing with a filter based on the price per night. The website application is embedded into the dashboard.
