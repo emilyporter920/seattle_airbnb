@@ -21,7 +21,7 @@ def ValuePredictor(to_predict_list):
 #  to_predict = to_predict_list.reshape(1,53)
  print("This is the prediction numpy array:",to_predict_list)
 #  loaded_model = pickle.load(open('model.pkl','rb'))
- loaded_model = load_model("model.h5")
+ loaded_model = load_model("Machine Learning/model.h5")
  to_predict = np.asarray(to_predict_list, dtype=np.float32)
  print('to_predict:',to_predict)
  result = loaded_model.predict(to_predict)
