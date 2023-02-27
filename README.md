@@ -107,12 +107,6 @@
 
 
 ## Tableau Integration
-* Below is a tableau dashboard that shows the prices based on latitude and longitude using both a scatter plot and a map with a filter based on the price per night. There is also a scatter plot showing a steady increase in price based on the number of bedrooms for each listing with a filter based on the price per night. The website application is embedded into the dashboard.
+* Below is a tableau repository using the source data.
 
-<p align="center">
-  <img 
-    src=Resources/images/tableau_dashboard.png
-  >
-</p>
-
-* Access the Tableau dashboard <a href="https://public.tableau.com/app/profile/emily.porter7135/viz/SeattleAirbnb_16668896790980/AirbnbPriceTrends?publish=yes" target="_blank">here</a>.
+* Access the Tableau dashboard <a href="https://github.com/emilyporter920/airbnb_home_listings" target="_blank">here</a>.
